@@ -1,0 +1,27 @@
+<style>
+body{
+    background-color: #eedb97;
+}
+.foto{
+    border-radius: 30%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    border:3px dashed black;
+}
+.intro{
+    text-align: center;
+}
+h1, h2, h3, p, ul {
+    color: black;
+    font-family:'Lucida Sans', sans-serif;
+}
+}
+h3{
+    text-align:center;
+}
+.nome{
+    font-family: serif;;
+}
+</style>
