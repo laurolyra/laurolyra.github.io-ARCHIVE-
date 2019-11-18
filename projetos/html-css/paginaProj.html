@@ -6,7 +6,11 @@
         <title>Projeto do dia 18/11/2019</title>
         <style>
             body{
-                background-color: cornflowerblue;
+                background-image: url('https://pixabay.com/get/54e1d3464d57aa14ea9d8579c529317d173ac3e456567548742b7ad397/kitchen-2165756.jpg');
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: 100%;
                 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
                 margin:0px;
             }
@@ -15,7 +19,7 @@
             }
             .menu-barra{
               overflow: hidden;
-              background-color: #333;
+              background-color: #99ff99;
               position: fixed; /* Set the navbar to fixed position */
               top: 0; /* Position the navbar at the top of the page */
               width: 100%; /* Full width */
@@ -25,88 +29,105 @@
                 margin-top:20px;
                 margin-left: 30px;
             }
-            #bio, #receitas, #contato {
+            #bio, #receitas, #pizza, #molho, #po, #bolo, #contato {
                 max-width: 660px;
-                margin-left: 0px;
+                margin-left: auto;
+                margin-right:auto;
             }
-            /*#softskills, #boardgames{
-                position: ;
-                right:0px;
-            }*/
-            .foto{
-                width: 10%;
-                float:right;
-                margin-right: 6px;
-                margin-top: 6px;
-                overflow: auto;
-            }
-
             section{
-                background-color:darkorange;
+                background-color:#ffff66;
             }
             p {
                 line-height: 1.5em;
+                text-align: center;
             }
             footer{
-              background-color: #333;
+              background-color: #99ff99;
               width: 100%; /* Full width */
-              margin-bottom: 0px;
+              margin: 0px;
+              padding:0px;
             }
             .rodape{
                 font-size: 9px;
                 text-align: center;
-                padding: 0px 0px;
+                margin: 0px;
+            }
+            .youtube{
+                display:block;
+                margin: auto;
             }
         </style>
     </head>
     <body>
         <nav class="menu-barra">
             <a class="menu-item" href="#bio">Sobre</a>
-            <a class="menu-item" href="#softskills">Soft skills</a>
             <a class="menu-item" href="#receitas">Receitas</a>
-            <a class="menu-item" href="#boardgames">Boardgames</a>
-            <a class="menu-item" href="#contato">Contato</a>
+            <a class="menu-item" href="#pizza">Pizza</a>
+            <a class="menu-item" href="#molho">Molho de tomate</a>
+            <a class="menu-item" href="#po">Pó de capuccino</a>
+            <a class="menu-item" href="#bolo">Bolo de cenoura</a>
         </nav>
-        <h1>Página teste de Lauro Lyra Aguiar</h1>
-        <h2 id="subtitulo">(Elaborada em 18/11/2019 como parte do projeto da Trybe)</h2>
-        <img class="foto" src="https://instagram.fcnf2-1.fna.fbcdn.net/vp/dd239cc633dfb1fdcdfc3c3b767851ad/5E5A7E3F/t51.2885-15/e35/67593101_653363285148355_5160983026812568460_n.jpg?_nc_ht=instagram.fcnf2-1.fna.fbcdn.net&_nc_cat=107" alt="Foto do cabra">
+        <div class="fundo"></div>
+        <h1>Página de receitas de Lauro Lyra Aguiar</h1>
+        <h2 id="subtitulo">(Página elaborada em 18/11/2019 como parte do projeto da Trybe)</h2>
         <section id="bio">
             <h2>Quem peste é Lauro?</h2>
             <p>
-                Este que vos fala nasceu em Maceió/AL. Nasci e me criei por lá e agora estou há dois na terra do pão de queijo.
-            </p>
-        </section>
-        <section id="softskills">
-            <h3>Soft skills</h3>
-            <p>
-                Além de minha formação como advogado e o estudo de programação, tenho minhas competências. São elas:
+                Este que vos fala nasceu em Maceió/AL. Nasci e me criei por lá e desde 2017 moro na terra do pão de queijo. Além de minha formação como advogado e o estudo de programação, curto muito cozinhar e, por meio desse site, vou compartilhar aquelas que mais faço.
             </p>
         </section>
         <section id="receitas">
             <h3>Receitas</h3>
-            <p> Quem me conhece um pouco já sabe que eu curto cozinhar. Pra mim, isso é uma terapia, um ato de afeto e, porque não, um ato político (não me sujeitando aos gostos e químicos impostos pela indústria alimentar). Dentre as receitas que mais faço, destaco as que estão abaixo:
-                <ul>
-                    <li><a href="https://www.youtube.com/watch?v=TQGosL96cFU">Pizza de frigideira</a></li>
-                    <li><a href="https://www.youtube.com/watch?v=Ny28wD2LglE" target="_blank">Molho de tomate</a> (nem precisa ser cereja, basta estar bem maduro!)</li>
-                    <li><a href="https://www.youtube.com/watch?v=sxs2fjn0YE0&t=40s" target="_blank">Pó de cappucino caseiro</a></li>
-                    <li><a href="https://www.youtube.com/watch?v=s1Ibk5VTFyw&t=114s">Bolo de cenoura</a> (a cobertura de chocolate dela é meio complexa, por isso deixarei a receita da que eu uso mais abaixo)</li>
+            <p> Pra mim, cozinhar é uma terapia, um ato de afeto e, porque não, um ato político (A partir do momento que não me sujeito aos gostos e aditivos químicos impostos pela indústria alimentar). Abaixo, coloco o ranking das que eu faço com maior frequência:</p>
+                <ol>
+                    <li><a href="#pizza">Pizza de frigideira</a></li>
+                    <li><a href="#molho">Molho de tomate</a> (nem precisa ser cereja, basta estar bem maduro!)</li>
+                    <li><a href="#po">Pó de cappucino caseiro</a></li>
+                    <li><a href="#bolo">Bolo de cenoura</a> (a cobertura de chocolate dela é meio complexa, por isso deixarei a receita da que eu uso mais abaixo)</li>
                 </ul>
-            </p>
+            <p>Há muitas outras. Irei adicionando aqui aos poucos.</p>
         </section>
-        <section id="boardgames">
-            <h3>Boardgames</h3>
+        <section class="receita" id="pizza">
+            <h3>Pizza de Frigideira</h3>
             <p>
-            Uma das paixões que tenho é jogar jogos de tabuleiro! Tanto que, antes de vir estudar na Trybe, eu estava trabalhando como explicador de jogos num bar na Savassi (inclusive, recomendo demais a Funtasy Bar e jogos!).<br>
-            Passados alguns anos nesse hobby, posso dizer que tenho (no mínimo) três jogos que nunca recuso uma partida. São eles:</p>
-            <ol>
-                <li>Power Grid</li>
-                <li>Ethnos</li>
-                <li>Pablo</li>
-            </ol>
+            Receita simples, prática e que tem sua sofisticação. Para fazer a massa, é muito simples. Você vai precisar de:
+            <ul>
+                <li>1 xícara de farinha</li>
+                <li>1/4 de xícara de água morna</li>
+                <li>1 pitada de sal</li>
+                <li>1/2 colher de sobremesa de açúcar</li>
+            </ul>
+            <p><strong>Modo de Preparo:<br></strong>
+            Misture todos os ingredientes e adicione a água morna. Amasse bastante até obter uma massa homogênea. Divida a massa em dois e abra ela com uma garrafa ou um rolo de massa. Leve pra frigideira. Após assar um dos lados, retire a massa, vire-a, adicione os recheios que deseje e coloque de volta na frigideira.<br>
+            <a href="https://www.youtube.com/watch?v=TQGosL96cFU" target="_blank">Fonte</a>
             </p>
         </section>
+        <section class="receita" id="molho">
+            <h3>Molho de tomate</h3>
+            <p>
+            Para acompanhar a pizza, nada melhor que um molho caseiro.</p>
+            <p><strong>Modo de Preparo:<br></strong>
+            Veja o vídeo. Mais simples, impossível!<br>
+            </p>
+        </section>
+        <iframe class="youtube" width="560" height="315" src="https://www.youtube.com/embed/Ny28wD2LglE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <section class="receita" id="po">
+            <h3>Pó de Capuccino</h3>
+            <p>
+            Modo de preparo no link abaixo:
+            </p>
+        </section>
+        <iframe class="youtube" width="560" height="315" src="https://www.youtube.com/embed/sxs2fjn0YE0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <section id="bolo">
+            <h3>Bolo de Cenoura</h3>
+            <p>
+            Sigo esta receita para o bolo. A cobertura do vídeo abaixo não me agrada. Recomendo que você faça seu tradicional brigadeiro:
+            </p>
+        </section>
+        <iframe class= "youtube" width="560" height="315" src="https://www.youtube.com/embed/s1Ibk5VTFyw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <section id="contato">
             <h3>Contato</h3>
+            <p>Veja o rodapé da página!</p>
         </section>
         <footer>
             <p class="rodape">Pagina criada em 18/11/2019 por <a href="mailto:laurolyra@gmail.com">Lauro Lyra Aguiar</a></p>
