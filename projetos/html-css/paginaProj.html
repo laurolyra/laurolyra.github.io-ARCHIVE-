@@ -6,13 +6,30 @@
         <title>Projeto do dia 18/11/2019</title>
         <style>
             body{
-                background-image: url('https://pixabay.com/get/54e1d3464d57aa14ea9d8579c529317d173ac3e456567548742b7ad397/kitchen-2165756.jpg');
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: cover;
                 height: 100%;
                 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
                 margin:0px;
+                background-color: #6699ff;
+            }
+            header{
+                background-image: url('https://pixabay.com/get/57e9d6414e54aa14f6da8c7dda6d367a173ed8e651546c4870287fd5904dc15bbe/food-1932466_1280.jpg');
+                margin:0;
+                height:300px;                
+
+            }
+            .fundo{
+                display: block;
+                margin: 0;
+                width:200;
+                height:350;
+            }
+            h1{
+                padding-top: 100px
+
+            }
+            #titulo{
+                color:white;
+                text-shadow: 3px 3px 0 #000;
             }
             h1, h2, h3{
                 text-align: center;
@@ -55,6 +72,13 @@
             .youtube{
                 display:block;
                 margin: auto;
+                background-color:#ffff66;
+            }
+            :target:before {
+                content:"";
+                display:block;
+                height:20px; /* fixed header height*/
+                margin:-5px 0 0; /* negative fixed header height */
             }
         </style>
     </head>
@@ -67,9 +91,13 @@
             <a class="menu-item" href="#po">Pó de capuccino</a>
             <a class="menu-item" href="#bolo">Bolo de cenoura</a>
         </nav>
-        <div class="fundo"></div>
-        <h1>Página de receitas de Lauro Lyra Aguiar</h1>
-        <h2 id="subtitulo">(Página elaborada em 18/11/2019 como parte do projeto da Trybe)</h2>
+        <div class="fundo">
+           <!--  <img src='https://pixabay.com/get/54e1d3464d57aa14f6d1867dda6d367a173ed8e651546c4870287fd59144c258b1/kitchen-2165756_1920.jpg'> -->
+        </div>
+        <header>
+        <h1 id="titulo">Página de receitas de Lauro Lyra Aguiar</h1>
+        <h2 id="titulo">(Página elaborada em 18/11/2019 como parte do projeto da Trybe)</h2>
+        </header>
         <section id="bio">
             <h2>Quem peste é Lauro?</h2>
             <p>
@@ -109,22 +137,22 @@
             <p><strong>Modo de Preparo:<br></strong>
             Veja o vídeo. Mais simples, impossível!<br>
             </p>
+             <span><iframe class="youtube" width="560" height="315" src="https://www.youtube.com/embed/Ny28wD2LglE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></span>
         </section>
-        <iframe class="youtube" width="560" height="315" src="https://www.youtube.com/embed/Ny28wD2LglE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <section class="receita" id="po">
             <h3>Pó de Capuccino</h3>
             <p>
             Modo de preparo no link abaixo:
             </p>
+            <span><iframe class="youtube" width="560" height="315" src="https://www.youtube.com/embed/sxs2fjn0YE0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></span>
         </section>
-        <iframe class="youtube" width="560" height="315" src="https://www.youtube.com/embed/sxs2fjn0YE0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <section id="bolo">
             <h3>Bolo de Cenoura</h3>
             <p>
             Sigo esta receita para o bolo. A cobertura do vídeo abaixo não me agrada. Recomendo que você faça seu tradicional brigadeiro:
             </p>
+            <span><iframe class= "youtube" width="560" height="315" src="https://www.youtube.com/embed/s1Ibk5VTFyw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></span>
         </section>
-        <iframe class= "youtube" width="560" height="315" src="https://www.youtube.com/embed/s1Ibk5VTFyw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <section id="contato">
             <h3>Contato</h3>
             <p>Veja o rodapé da página!</p>
