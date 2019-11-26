@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>teste</title>
+</head>
+<body>
+<img id="target"></img>
+<input type="file" id="select_image" name="image" onchange="putImage()"></input>
+</body>
+<script>
+function showImage(src, target) {
+            var escolhida = new FileReader();
+
+             escolhida.onload = exibir(){
+      target.src = escolhida.result;
+    }
+           escolhida.readAsDataURL(src.files[0]);
+
+        }
+        function putImage() {
+            var src = document.getElementById("select_image");
+            var target = document.getElementById("target");
+            showImage(src, target);
+        }
+</script>
+</html>
