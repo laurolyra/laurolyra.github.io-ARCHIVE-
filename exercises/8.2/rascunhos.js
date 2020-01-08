@@ -17,8 +17,8 @@ let books = [{
 ]
 
 function teste() {
-  const achaAno = books.find(item => item.author.name === 'George R. R. Martin');
-  return achaAno.author.birthYear
+  const achaAno = books.find(item => item.author.birthYear === 1892);
+  return achaAno.author.name
 }
 
 
