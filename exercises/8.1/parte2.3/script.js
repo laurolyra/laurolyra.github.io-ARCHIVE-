@@ -6,9 +6,10 @@ clickCount.addEventListener('click', function () {
   informaCliques = informaCliques +1
   textoClique = document.createElement('div');
   textoClique.setAttribute ('id', 'numerocliques');
-  textoClique.innerHTML = `O botão foi clicado ${informaCliques} vezes.`;
+  if(informaCliques == 1) {
+    textoClique.innerHTML = `O botão foi clicado ${informaCliques} vez.`;
+  } else {
+  textoClique.innerHTML = `O botão foi clicado ${informaCliques} vezes.`;}
+  informaBotao.removeChild(informaBotao.childNodes[0]);
   informaBotao.appendChild(textoClique);
-  if (informaBotao.childElementCount = 1) {
-    informaBotao.removeChild(informaBotao.childNodes[0]);
-  }
 })
