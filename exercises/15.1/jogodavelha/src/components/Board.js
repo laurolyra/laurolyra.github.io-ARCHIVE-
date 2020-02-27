@@ -33,9 +33,9 @@ class Board extends Component {
   }
 
   checkSpaces() {
-    const { board } = this.state;
+    const { board, gameEnded } = this.state;
     const verifyBoard = board.every(item => item !== '');
-    if (verifyBoard === true) {
+    if (verifyBoard === true || gameEnded === false) {
       alert('Draw Game!');
     }
   }
