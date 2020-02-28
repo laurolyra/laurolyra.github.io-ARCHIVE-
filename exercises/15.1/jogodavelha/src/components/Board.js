@@ -6,7 +6,6 @@ class Board extends Component {
     super(props);
     this.state = {
       turn: 'X',
-      gameEnded: false,
       board: Array(9).fill('')
     }
     this.checkWinner = this.checkWinner.bind(this);
@@ -35,7 +34,7 @@ class Board extends Component {
   checkSpaces() {
     const { board, gameEnded } = this.state;
     const verifyBoard = board.every(item => item !== '');
-    if (verifyBoard === true || gameEnded === false) {
+    if (verifyBoard === true) {
       alert('Draw Game!');
     }
   }
@@ -56,6 +55,9 @@ class Board extends Component {
     lines.forEach((item) => {
       if (board[item[0]] === 'X' && board[item[1]] === "X" && board[item[2]] === "X") {
         alert('Winner is X!');
+      }
+      if (board[item[0]] === 'O' && board[item[1]] === "O" && board[item[2]] === "O") {
+        alert('Winner is O!');
       }
     });
   }
