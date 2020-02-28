@@ -65,8 +65,8 @@ class Board extends Component {
   render() {
     const { board } = this.state
     return (
-      <div className="board" onClick={(e) => this.squareMark(e)}>
-        {board.map((slot, index) => <div key={index} className="square" data-square={`${index}`} />)}
+      <div className="board">
+        {board.map((slot, index) => <div data-testid="emptySquare" onClick={(e) => this.squareMark(e)} key={index} className="square" data-square={`${index}`} />)}
       </div>
     )
   }
