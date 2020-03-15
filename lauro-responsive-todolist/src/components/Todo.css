@@ -1,0 +1,48 @@
+.done{
+  text-decoration: line-through;
+  background-color:#454545;
+  opacity:0.5;
+}
+
+.taskButtons {
+  display: flex;
+  justify-content: space-between;
+}
+
+button:disabled{
+  background-color: #D8D6D9;
+}
+
+.taskList {
+  overflow:auto;
+  margin-top: 20px;
+  cursor: pointer;
+  user-select: none;
+  border: 2px solid gray;
+  border-radius: 5px;
+  min-height: 20px;
+  max-height: 120px;
+  overflow:auto;
+}
+
+.task {
+  line-height: 20px;
+  border: 1px gray;
+  border-top-style: dotted;
+  margin: 2px;
+  padding-left: 5px;
+  word-break: normal;
+}
+
+.task:first-child{
+  border-top: none;
+}
+
+.task:hover {
+  background-color:#ffff99;
+}
+
+
+.selected {
+  background-color:#ffff99;
+}

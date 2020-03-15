@@ -1,0 +1,95 @@
+.App {
+  margin-top: 4%;
+}
+
+body {
+  background-image: url(./images/ashley-edwards-zwmkMkJ2Qi4-unsplash.jpg);
+  background-position:top;
+  background: cover;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-color: #d1cfd2;
+}
+
+button {
+  background-color: #454545;
+  border: none;
+  color: white;
+  padding: 5px 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline;
+  font-size: 16px;
+  font-family: 'Solway', serif;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+h1 {
+  margin: 0;
+  padding: 0px 10px;
+  text-align: center;
+}
+
+.mainContainer{
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  width: 84%;
+}
+
+.rightContainer {
+  margin-right: 21px;
+  width: 40%;
+  align-self: center;
+}
+
+.leftContainer {
+  margin-left: 20px;
+  width: 38%;
+}
+
+.leftButtons {
+  display:flex;
+  justify-content: center;
+}
+
+@media (max-width: 375px) {
+  body {
+    background-image: url(./images/notepad-media-query.png);
+    background-position:top;
+    background: cover;
+    background-repeat: no-repeat;
+    background-size: 160%;
+  }
+
+  .App {
+    margin-top: 10%;
+  }  
+
+ .mainContainer {
+   flex-direction: column;
+   margin: 0px 30px 0 40px;
+   padding-top: 17px;
+ }
+
+ .mainContainer h1 {
+   display: none;
+ }
+
+ .leftContainer {
+  margin: auto;
+  width: 100%;
+ }
+
+ .rightContainer {
+   align-self: center;
+   width: 100%;
+ }
+
+ .rightContainer h1 {
+   display: none;
+ }
+}

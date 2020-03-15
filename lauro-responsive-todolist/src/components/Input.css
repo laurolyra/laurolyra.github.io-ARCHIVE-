@@ -1,0 +1,17 @@
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+}
+.arrowContainer {
+  display: flex;
+  align-self: center;
+  justify-content: space-around;
+  width: 60px;
+}
+
+input {
+  background-color: transparent;
+  border-radius: 5px;
+  padding: 5px;
+  width: 300px;
+}
