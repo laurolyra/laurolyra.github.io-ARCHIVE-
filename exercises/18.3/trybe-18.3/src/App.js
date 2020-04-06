@@ -6,17 +6,13 @@ import './App.css';
 
 function Greeting() {
   // 💣 delete this variable declaration and replace it with a React.useState call
-  const [name, changeName] = React.useState(''); 
-
-  const handleChange = (event) => {
-    changeName(event.target.value);
-  }
+  const [name, changeName] = React.useState('');
 
   return (
     <div>
       <form>
         <label htmlFor="name">Name: </label>
-        <input onChange={handleChange} id="name" />
+        <input onChange={(e) => changeName(e.target.value)} id="name" />
       </form>
       {name ? <strong>Hello {name}</strong> : 'Please type your name'}
     </div>
