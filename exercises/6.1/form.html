@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Form Trybe - 6.1</title>
+     <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div id = 'dados-pessoais'>
+    <fieldset>
+        <legend>Informações Pessoais</legend>
+            Nome: <input name = "nome" required="required" maxlength="40" type="text"><br><br>
+            E-mail: <input name = "e-mail" required="required" maxlength="50" type="text"><br><br>
+            CPF (apenas números): <input name = "CPF" required="required" type="text" maxlength="11"><br><br>
+            Endereço: <input name = "endereco" required="required" type="text" maxlength="200"><br><br>
+            Cidade: <input name = "cidade" required="required" type="text" maxlength="28"><br><br>
+            Estado: <select id='seleciona-estado' name='estado'>
+            </select><br><br>
+        <legend>Você reside em casa ou apartamento?</legend>
+            <label for=res1><input name='opcao-moradia' id='res1' value='casa' type='radio'required='required'>Casa</label>
+            <label for=res2><input name='opcao-moradia' id='res2' value='apartamento' type='radio'>Apartamento</label>
+    </fieldset></div>
+    <div id = 'dados-profissionais'>
+    <fieldset>
+        <legend>Informações profissionais</legend>
+            <label for='Resumo-currículo'>Resuma seu Currículo (limite de 1000 caracteres).</label><br>
+            <textarea class = 'caixa-grande' name='curriculo' maxlength="1000"></textarea><br><br>
+            Cargo: <input name = "cargo1" required="required" maxlength="40" type="text"><br><br>
+            Atribuições do cargo:<textarea class = 'caixa-grande' name='resumo-cargo1' maxlength="500"></textarea><br><br>
+            Data de entrada (dd/mm/aaaa): <input class = 'data-entrada' required="required" name='data-entrada' maxlength="10"></input>
+    </div>
+    </fieldset>
+    <div id="envia-dados">
+        <button type="button" id="botao-envia">Enviar dados</button>
+    </div>
+    
+</body>
+<script src="script.js"></script>
+</html>

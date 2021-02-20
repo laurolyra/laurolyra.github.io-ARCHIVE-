@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Paleta de Cores</title>
+</head>
+<style>
+.quadrado{
+	margin:auto;
+	margin-bottom: 20px;
+	width: 40px;
+	height: 40px;
+	border: 1px solid #000;
+	display:inline-block;
+}
+td{
+	width: 40px;
+	height: 40px;
+}
+
+</style>
+<body>
+<h1 style="text-align:center">Bem vindo à Paleta de Cores!</h1>
+<div class="quadrado" id="preto"></div>
+<div class="quadrado" id="azul"></div>
+<div class="quadrado" id="verde"></div>
+<div class="quadrado" id="vermelho"></div>
+<table border="1" style="border-collapse:collapse;">
+  <tr class="1">
+    <td class="a"></td>
+    <td class="a"></td>
+    <td class="a"></td>
+    <td class="a"></td>
+    <td class="a"></td>
+  </tr>
+  <tr class="2">
+    <td class="b"></td>
+    <td class="b"></td>
+    <td class="b"></td>
+    <td class="b"></td>
+    <td class="b"></td>
+  </tr>
+  <tr class="3">
+    <td class="c"></td>
+    <td class="c"></td>
+    <td class="c"></td>
+    <td class="c"></td>
+    <td class="c"></td>
+  </tr>
+  <tr class="4">
+    <td class="d"></td>
+    <td class="d"></td>
+    <td class="d"></td>
+    <td class="d"></td>
+    <td class="d"></td>
+  </tr>
+  <tr class="5">
+    <td class="e"></td>
+    <td class="e"></td>
+    <td class="e"></td>
+    <td class="e"></td>
+    <td class="e"></td>
+  </tr>
+</table>
+</body>
+<script>
+	let preto = document.getElementById("preto");
+	preto.style.backgroundColor='black';
+	let azul = document.getElementById("azul");
+	azul.style.backgroundColor='blue';
+	let verde = document.getElementById("verde");
+	verde.style.backgroundColor='green';
+	let vermelho = document.getElementById("vermelho");
+	vermelho.style.backgroundColor='red';
+
+	azul.addEventListener('click', guardaCor);
+	function guardaCor() {
+		document.getElementsByClassName('a')[1].style.backgroundColor = "red";
+	}
+
+
+// 	código dojulio
+// 	window.onload = function () {
+//   let colorsDivs = document.getElementsByClassName('div_color_pallet');
+//   let div_color1 = document.querySelector('#black');
+//   div_color1.addEventListener("mouseup", mouseUp);
+//   let div_color2 = document.getElementById('green');
+//   div_color2.addEventListener("mouseup", mouseUp);
+//   let div_color3 = document.querySelector('#red');
+//   div_color3.addEventListener("mouseup", mouseUp);
+//   let div_color4 = document.getElementById('purple');
+//   div_color4.addEventListener("mouseup", mouseUp);
+//   document.querySelector('.grid_container').addEventListener("click", pixel);
+// }
+// function pixel (event) {  
+//   let targetColor = document.querySelector('h1').style.color;
+//   event.target.style.backgroundColor = targetColor;
+// }
+// function mouseUp (event) {
+//   let targetColor = event.target.id;
+//   document.querySelector('h1').style.color = targetColor;  
+// } 
+</script>
+</script>
+</html>
