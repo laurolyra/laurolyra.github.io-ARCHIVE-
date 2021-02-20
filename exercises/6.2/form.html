@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Form Trybe - 6.1</title>
+     <link rel="stylesheet" type="text/css" href="css/styles.css">
+     <link rel="stylesheet" type="text/css" href="css/materialize.min.css">
+     <link rel="stylesheet" type="text/css" href="css/DatePickerX.min.css">
+</head>
+<body>
+    <div class = 'container'>
+	    <div id = 'dados-pessoais'>
+	    <fieldset>
+	        <legend>Informações Pessoais</legend>
+	            <input name = "nome" required="required" maxlength="40" type="text" placeholder="Nome Completo"><br><br>
+	            <input name = "e-mail" required="required" maxlength="50" type="email" placeholder='E-mail'><br><br>
+	            <input name = "CPF" required="required" type="text" maxlength="11" placeholder='CPF (apenas números)'><br><br>
+	            <input name = "endereco" required="required" type="text" maxlength="200" placeholder='Endereço completo'><br><br>
+	            <input name = "cidade" required="required" type="text" maxlength="28" placeholder='cidade'><br><br>
+	            Estado: <select id='seleciona-estado' name='estado' class="browser-default">
+	            </select><br><br>
+	        <legend>Você reside em casa ou apartamento?</legend>
+	            <label for=res1>
+	            	<input name='opcao-moradia' id='res1' value='casa' type='radio'required='required'>
+	            	<span style="color:black">Casa</span>
+	            </label>
+	            <label for=res2>
+	            	<input name='opcao-moradia' id='res2' value='apartamento' type='radio'>
+	            	<span style="color:black">Apartamento</span>
+	            </label>
+	    </fieldset></div>
+	    <div id = 'dados-profissionais'>
+	    <fieldset>
+	        <legend>Informações profissionais</legend>
+	            <label for='Resumo-currículo' style="color:black">Resuma seu Currículo (limite de 1000 caracteres).</label><br>
+	            <textarea class = 'caixa-grande' name='curriculo' maxlength="1000"></textarea><br><br>
+	            Cargo: <input name = "cargo1" required="required" maxlength="40" type="text"><br><br>
+	            Atribuições do cargo:<textarea class = 'caixa-grande' name='resumo-cargo1' maxlength="500"></textarea><br><br>
+	            Data de entrada (dd/mm/aaaa): <input class='data-entrada' required="required" name='data-entrada'></input>
+	    </div>
+	    </fieldset>
+	    <div id="envia-dados">
+	        <input type="submit" value='enviar' id='botao-envia'></input>
+	    </div>
+	</div>
+</body>
+<script src="js/script.js"></script>
+<script src="js/DatePickerX.min.js"></script>
+</html>
